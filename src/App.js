@@ -1,13 +1,13 @@
 import "./App.css";
+import Container from "./components/Container/";
+import Section from "./components/Section";
+import SubmitForm from "./components/SubmitForm";
+import List from "./components/List";
+import FilterContacts from "./components/FilterContacts";
 import { Component } from "react";
-import Container from "./components/Container/Container";
-import Section from "./components/Section/Section";
-import SubmitForm from "./components/SubmitForm/SubmitForm";
 import { v4 as uuidv4 } from "uuid";
-import List from "./components/List/List";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import FilterContacts from "./components/FilterContacts/FilterContacts";
 
 export default class App extends Component {
   state = {

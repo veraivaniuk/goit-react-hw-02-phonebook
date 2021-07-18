@@ -1,13 +1,13 @@
 import s from "./List.module.css";
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
+import Button from "../Button";
 
 function List({ contacts, onDelete }) {
   return (
     <ul>
       {contacts.map((el) => {
         return (
-          <li classname={s.list} key={el.id}>
+          <li className={s.list} key={el.id}>
             {el.name}: {el.number}
             <Button
               buttonName="Delete"
@@ -25,10 +25,10 @@ List.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      number: PropTypes.number.isRequired,
+      number: PropTypes.string.isRequired,
     })
   ).isRequired,
-  onDelete: PropTypes.number.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default List;
