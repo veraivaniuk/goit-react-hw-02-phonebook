@@ -1,0 +1,26 @@
+@import "https://fonts.googleapis.com/css?family=Russo+One";
+
+.button {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #4830f0 51%,
+    #9eefe1 100%
+  );
+  background-size: 200% auto;
+  border-style: none;
+  transition: 0.5s;
+}
+.button:hover {
+  background-position: right center;
+}

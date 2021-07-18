@@ -1,0 +1,41 @@
+@import "https://fonts.googleapis.com/css?family=Russo+One";
+.title {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-weight: 900;
+  margin: 20px;
+  animation-play-state: running;
+  color: transparent;
+  background: url(https://obninsksite.ru/assets/theme/images/blog/square.svg)
+    no-repeat #ece7ea;
+  background-size: cover;
+  background-clip: text;
+  animation: move-background 20s infinite linear alternate;
+}
+
+@-webkit-keyframes move-background {
+  0% {
+    background-position: -300px 0;
+  }
+  100% {
+    background-position: 300px -300px;
+  }
+}
+@-moz-keyframes move-background {
+  0% {
+    background-position: -300px 0;
+  }
+  100% {
+    background-position: 300px -300px;
+  }
+}
+@keyframes move-background {
+  0% {
+    background-position: -300px 0;
+  }
+  100% {
+    background-position: 300px -300px;
+  }
+}
